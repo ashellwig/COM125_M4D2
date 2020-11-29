@@ -104,6 +104,9 @@
         "*.synctex.gz": true,
         "*.lol": true
     },
+    // Git
+    "gitlens.views.lineHistory.enabled": true,
+    // Spell Checker
     "cSpell.words": [
         "aniston",
         "aniston's",

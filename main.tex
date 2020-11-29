@@ -13,6 +13,15 @@
   \usepackage[toc]{appendix}       % Appendix
   \usepackage{fancyhdr}            % Headings and Footers
   \usepackage{xcolor}              % Text Colors
+  \usepackage[style=apa, sortcites=true, sorting=nyt]{biblatex}  % Bibliography
+
+
+  % Bibliography Setup
+  % Language Mappings
+  \DeclareLanguageMapping{english}{english-apa}
+  \DeclareLanguageMapping{american}{american-apa}
+  % Bibliography File Path
+  \addbibresource{main.bib}
 
 
   % Hyperlink Setup
@@ -100,10 +109,21 @@
       towards their emotion be it happiness, sadness, or disgust, and
       exhaustion.
 
-
-
+    Many intelligence agencies use something called the \textit{Facial Action
+      Coding System} in order to have agents act as rudimentary ``human
+      lie-detectors''. The system, at its basic idea, assines certain values
+      to different movements of facial muscles to be assigned when observing
+      someone else. There are over around 46 basic ``action units'' (movements
+      of the facial muscles) which are then assigned a letter value to
+      illustrate their intensity --- clearly, a lot can be told from just
+      ``simply'' reading someone's face
+      \parencite[pp. 207--209]{cohn_observer-based_2007}.
 
   % Replies
   % \include{tex/01-response.tex}
   % \include{tex/02-response.tex}
+
+
+  % Bibliography
+  \printbibliography[]
 \end{document}
